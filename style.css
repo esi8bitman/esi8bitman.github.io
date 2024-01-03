@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'commodore';
+    src: url('assets/Cfont.TTF');
+}
+
+/*#CFont{font-family: 'commodore';}*/
+body{
+    background-color: black;
+}
+
+.title{
+    font-family: 'commodore'; color: white; font-size: 150%;
+    display: block;
+}
+
+.title > h1{ padding-top: 1rem; text-align: center;}
+.title > b{ animation-name: curs; animation-duration: 1s;animation-iteration-count: infinite;}
+
+@keyframes curs {
+    0%{opacity:1;}
+    50%{opacity:1;}
+    51%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+.menu{
+    text-align: center;
+    list-style:none ;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-family: 'commodore';
+    
+}
+.menu > li{
+    display: inline-block;
+    font-size: 150%;
+    padding: 1rem;
+    min-width: 7rem;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.menu > li > a { 
+    color: white; 
+    text-decoration: none;
+}
+
+
