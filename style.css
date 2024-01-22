@@ -9,7 +9,7 @@ body{
 }
 
 .title{
-    font-family: 'commodore'; color: white; font-size: 150%;
+    font-family: 'commodore'; color: white; font-size: 150%;font-size: 2vw;
     display: block;
 }
 
