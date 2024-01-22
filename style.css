@@ -9,12 +9,12 @@ body{
 }
 
 .title{
-    font-family: 'commodore'; color: white; font-size: 150%;font-size: 2vw;
-    display: block;
+    font-family: 'commodore'; color: white; font-size: 150%;/*font-size: 2vw;*/
+    display: block;text-align: center;
 }
 
-.title > h1{ padding-top: 5%; text-align: center;}
-.title > b{ animation-name: curs; animation-duration: 1s;animation-iteration-count: infinite;}
+.title > c {display: block;text-align: left;padding-left: 2%;padding-bottom: 2%; font-size: 2.5vw;}
+.title > c >b{animation-name: curs; animation-duration: 1s;animation-iteration-count: infinite;}
 
 @keyframes curs {
     0%{opacity:1;}
@@ -26,17 +26,14 @@ body{
 .menu{
     text-align: center;
     list-style:none ;
-    padding: 5%;
-    /*margin-top: 5%;*/
     font-family: 'commodore';
     
 }
 .menu > li{
     display: inline-block;
     font-size: 150%;
-    font-size: 2vw;
-    padding: 5%;
-    min-width: 10%;
+    font-size: 2.5vw;
+    padding-right: 3%;
     text-align: center;
     cursor: pointer;
     
