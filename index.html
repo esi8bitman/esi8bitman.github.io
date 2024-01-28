@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESI 8-Bit Man 🎮</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="title">
@@ -25,11 +26,35 @@
             <li><a target="myframe" href="#contact">Contact me</a></li>
     </div>
 
-    <iframe src="home.html" style="position: absolute; height:100%; width:95%; padding: 2%; border:none; padding-top:5%;" scrolling="no" name="myframe"></iframe>
+    <iframe id="myframe" name="myframe" src="about.html" scrolling="no" style="width:100%; border:none; overflow: hidden;"></iframe>
     
+    <script>
+        var frame = document.getElementById("myframe");
+        frame.onload = function() {
+        frame.style.height =  frame.contentWindow.document.body.scrollHeight + 'px';
+        }
+        //if (y.document)y = y.document;
+      //alert(y);
+        
+     </script>
 
-    
+     <!-- <script>
+             //var iWindow = (<HTMLIFrameElement> iframe).contentWindow;
+           //iframe.height = iframe.height = iframe.contentWindow.document.body.scrollHeight;
+         
+        // setTimeout(function () 
+        // {   
+        //     var frame = document.getElementById("myframe");
+          
+        //   //obj.style.height = obj.contentWindow.documentElement.scrollHeight + 'px';
+        //   alert(document.getElementById("myframe").scrollHeight);
+        // }, 1000);
 
-    <script src="script.js"></script>
+          var frame = document.getElementById("myframe") as HTMLIFrameElement;
+          //obj.style.height = obj.contentWindow.documentElement.scrollHeight + 'px';
+          alert(frame.scrollHeight);
+        
+    </script> -->
+
 </body>
 </html>
