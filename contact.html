@@ -4,30 +4,72 @@
 
     <style>
         @font-face {
-    font-family: 'commodore';
-    src: url('./assets/Cfont.TTF');
-}
-        
-        body {
-            color: white; 
-            word-wrap: break-word; 
-            font-family: 'commodore';
-            line-height: 170%;
+            font-family: 'arcade';
+            src: url('./assets/Text.TTF');
         }
-
-
+    
+        body {
+            font-family: 'arcade';
+            font-size: 100%;
+        }
+    
+        .Contacts {
+            float: left;
+            padding: 5%;
+            cursor: pointer;
+            list-style: none;
+            columns: 2;
+        }
+        .Contacts>li{
+            margin-bottom: 5%;
+            width: 45vw;
+        }
+        
+        .Contacts>li>img {
+            width: 64px;
+            image-rendering: pixelated;
+            vertical-align: middle;
+        }
+    
+        .Contacts>li>a {
+            color: white;
+        }
     </style>
-
+    
 </head>
 
 <body>
+    <div class="Contacts">
+        <li><img src="./assets/GameBoy.gif">
+        </li>
+        <li><img src="./assets/Mail_ICO.png">
+            <a href="mailto:esi.inc.company@gmail.com">E-Mail</a>
+        </li>
+        <li><img src="./assets/LinkedIn_ICO.png">
+            <a href="https://www.linkedin.com/in/esi8bitman/">LinkedIn</a>
+        </li>
+        <li><img src="./assets/YouTube_ICO.png">
+            <a href="https://www.youtube.com/@EsiGameStudio">YouTube Channel</a>
+        </li>
+        <li><img src="./assets/Itch_ICO.png">
+            <a href="https://esi-gamestudio.itch.io/">Itch.IO</a>
+        </li>
+        <li><img src="./assets/Insta_ICO.png">
+            <a href="https://www.instagram.com/esi_game_studio">Instagram</a>
+        </li>
+        <li><img src="./assets/Twitter_ICO.png">
+            <a href="https://twitter.com/ESI8bitman">Twitter</a>
+        </li>
+        <li><img src="./assets/Discord_ICO.png">
+            <a href="https://discord.com/channels/@me/ESI_8BitMan#1817">Discord</a>
+        </li>
+        <li><img src="./assets/Telegram_ICO.png">
+            <a href="https://t.me/ESI8bitman">Telegram</a>
+        </li>
+        <li><img src="./assets/Github_ICO.png">
+            <a href="https://github.com/esi8bitman">GitHub</a>
+        </li>
 
-    <div class="Contacts" style="box-sizing: border-box;">
-        <div class="column" style="float: left; size: 10% ; padding: 5%; " >
-          <img src="./assets/Mail_ICO.png" style="width:30%">
-
-          <a href="mailto:test@example.com?subject=Testing out mailto!">First Example</a>
-        </div>
     </div>
 
 </body>

@@ -4,12 +4,51 @@
 
     <style>
         
+        @font-face {
+    font-family: 'arcade';
+    src: url('./assets/Text.TTF');
+}
+        
         body {
             color: white; 
             word-wrap: break-word; 
-            font-family: 'Courier New', Courier, monospace;
-            line-height: 170%;
+            font-family: 'arcade';
         }
+
+        .portfolio>li {
+width: 80%;
+height: 100%;
+border:solid thick white;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.portfolio>li>h1 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.portfolio>li>a {
+    font-size: 1.5vw;
+    line-height: 170%;  
+}
+
+.portfolio>li>iframe {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  border: none;
+  position: relative;
+  width: 50vw;
+  height: 29.4vw;
+
+}
 
 
     </style>
@@ -17,6 +56,34 @@
 </head>
 
 <body>
+<div class="portfolio" style="padding-top: 1vw;padding-bottom: 2vw;">
 
+    <li>
+        <h1>Novonordisk Demo Application</h1>
+        <br>
+        <a> 
+Novo Company show application made by Unity for Android.
+I make this application for show some sections of the Novo company to users.
+That have AR and VR ability to have a better experience.
+3D models made by my friend.
+        </a>
+        <br>
+        <iframe src="https://www.youtube.com/embed/4BbqMhd3Pkc">
+        </iframe>
+    </li>
+
+
+
+    <li>
+        <h1>Game Name</h1>
+        <a> 
+Novo Company show application made by Unity for Android.
+I make this application for show some sections of the Novo company to users.
+That have AR and VR ability to have a better experience.
+3D models made by my friend.
+        </a>
+    </li>
+
+</div>
 
 </body>
