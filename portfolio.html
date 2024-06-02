@@ -1,91 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <style>
-        
         @font-face {
-    font-family: 'arcade';
-    src: url('./assets/Text.TTF');
-}
-        
+            font-family: 'arcade';
+            src: url('./assets/Text.TTF');
+        }
+
         body {
-            color: white; 
-            word-wrap: break-word; 
+            color: white;
+            word-wrap: break-word;
             font-family: 'arcade';
         }
 
         .portfolio>li {
-width: 80%;
-height: 100%;
-border:solid thick white;
-display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5%;
-  padding-left: 3%;
-  padding-right: 3%;
-}
+            width: 80%;
+            height: 100%;
+            border: solid thick white;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
 
-.portfolio>li>h1 {
-    font-size: 2vw;
-    text-align: center;
-}
+        .portfolio>li>h1 {
+            font-size: 2vw;
+            text-align: center;
+        }
 
-.portfolio>li>a {
-    font-size: 1.5vw;
-    line-height: 170%;  
-}
+        .portfolio>li>a {
+            font-size: 1.5vw;
+            line-height: 170%;
+            color: white;
+        }
 
-.portfolio>li>iframe {
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  border: none;
-  position: relative;
-  width: 50vw;
-  height: 29.4vw;
+        .portfolio>li>iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            margin-top: 5%;
+            border: none;
+            position: relative;
+            width: 50vw;
+            height: 29.4vw;
 
-}
+        }
 
+        .portfolio>li>.webList>.Item>img {
+            width: 100%;
+        }
 
+        .portfolio>li>.webList>.Item>a {
+            font-size: 1.5vw;
+            color: white;
+        }
+
+        .portfolio>li>.webList>.Item {
+            float: left;
+            width: 18%;
+            padding: 1%;
+        }
+
+        .portfolio>li>.webList::after {
+            content: "";
+            clear: both;
+            display: block;
+            padding-bottom: 2.5%;
+        }
     </style>
 
 </head>
 
 <body>
-<div class="portfolio" style="padding-top: 1vw;padding-bottom: 2vw;">
-<!-- -----------------List--------------------- -->
+    <div class="portfolio" style="padding-top: 1vw;padding-bottom: 2vw;">
+        <!-- -----------------List--------------------- -->
 
 
-    <li>
-        <h1>Novonordisk Demo Application</h1>
-        <br>
-        <a> 
-Novo Company show application made by Unity for Android.
-I make this application for show some sections of the Novo company to users.
-That have AR and VR ability to have a better experience.
-3D models made by my friend.
-        </a>
-        <br>
-        <iframe src="https://www.youtube.com/embed/4BbqMhd3Pkc">
-        </iframe>
-    </li>
 
-<!-- -------------------------------------- -->
 
-    <li>
-        <h1>Game Name</h1>
-        <a> 
-Novo Company show application made by Unity for Android.
-I make this application for show some sections of the Novo company to users.
-That have AR and VR ability to have a better experience.
-3D models made by my friend.
-        </a>
-    </li>
+        <!-- ---------------------------------------->
+        <li>
+            <h1>Cyber Star</h1>
+            <br>
+            <a>
+                I searched and tested many shooter mobile games. But I can’t find something like “StarFox”. So I decided
+                to make a game with the taste of SNES StarFox. I’m trying to make this game so light to install on every
+                device and so easy to control and play it. The best thing about it is that the levels are JSON files and
+                I can have many new levels for it. You can install the alpha version of that.
 
-</div>
+            </a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=vcQ_OraV6EA">
+            </iframe>
+        </li>
+
+        <!-- ---------------------------------------->
+        <li>
+            <h1>Sci-Fi Third person</h1>
+            <br>
+            <a>
+                I like to make a third platformer game for an android and PC. So I decided to make a great character
+                controller with good technical things like dynamic foots , animated gun shots with code, changing
+                weapons and many dynamic things that are used for most third person games and all things are great
+                challenges for me. I worked on it in my free time and I hope to make it better.
+            </a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=uA0Xe3uHXQc">
+            </iframe>
+        </li>
+        <!-- ---------------------------------------->
+        <li>
+            <h1>Adventure of ESI : Space thieves</h1>
+            <br>
+            <a>
+                I wanted to make a game for famicom when I was a kid. So I tried to make a retro platformer game with
+                all famicom standards. My references are Mega Man and Duck Tales. The best thing about this game is , I
+                did all of the things of the game from Idea to be published. Game design , programming , making all arts
+                , composing music and other things I did by myself. The hardest part for me was game design and level
+                design. I use game maker studio 1.4 to make the game. I’ll be so happy if you play it and write a
+                comment for me about how it was that?
+            </a>
+            <br></br>
+            <a target="_blank" href="https://esi-gamestudio.itch.io/esi-space-thieves">Download Page</a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=3wenHCpE9ns">
+            </iframe>
+        </li>
+        <!-- ---------------------------------------->
+        <li>
+            <h1>Virtual Gallery</h1>
+            <br>
+            <a>
+                Just imagine you have a paint gallery. You can design your paintings on the wall and make a great
+                beautiful view for
+                visitors. Visitors are coming to your place with VR devices. This is my idea to make a VR application in
+                2018 with
+                Unity. Making custom paints with frames and fixing them on the wall was the challenge. That’s canceled
+                because I can’t
+                find an investor. And now you can test my demo on itch.io…
+            </a>
+            <br></br>
+            <a target="_blank" href="https://esi-gamestudio.itch.io/virtualgallery">Download Page</a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=weqZioL2tPc">
+            </iframe>
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>Winning Heroes</h1>
+            <br>
+            <a>
+                This is a 4v4 soccer game for android. The big challenge for me is the behavior of the NPCs. But the
+                game was canceled
+                by the owner of it. So put it on Itch.io for the test.
+                I made models with Blender and made the game with Unity.
+
+            </a>
+            <br></br>
+            <a target="_blank" href="https://esi-gamestudio.itch.io/winning-heroes">Download Page</a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=QYDAKDQW6cw">
+            </iframe>
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>Shadab and Shangool</h1>
+            <br>
+            <a>
+                This game was designed for kids. My friend made the models and I designed and programmed the game. The
+                player is a kid
+                that had a baby monster and he should find food and water glasses for the baby to make him grow up!
+                Unfortunately the
+                owner doesn’t like to publish it on the market.
+            </a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=n1Y2qQPlN3w">
+            </iframe>
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>Because</h1>
+            <br>
+            <a>
+                This game was made for the Woman-Life-Freedom game jam. I designed and made this game with a pre-made
+                cubic
+                model in just 2 days. You can play it on PC and Android.
+
+            </a>
+            <br></br>
+            <a target="_blank" href="https://esi-gamestudio.itch.io/beacuse">Download Page</a>
+            <br>
+            </br>
+            <img src="./assets/Pics/Pic (2).jpg"
+                style="width: 50vw;height: 29.4vw;display: block;margin-left: auto;margin-right: auto;">
+            <br>
+            </br>
+
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>HTML Games</h1>
+            <br>
+            <a>
+                These games are designed and developed for a game platform. Those games are so light in size and have a
+                simple and
+                funny
+                gameplay and you can play it with just a finger! I made them with game maker studio 1.4 and 2 and
+                exported them as
+                HTML
+                games. So you can play them on every device.
+            </a>
+            <br></br>
+            <div class="webList">
+                <div class="Item">
+                    <a target="_blank" href="https://esi-gamestudio.itch.io/hapooli">Happoli</a>
+                    <br></br>
+                    <img src="./assets/Pics/Pic (17).jpg">
+                </div>
+                <div class="Item">
+                    <a target="_blank" href="https://esi-gamestudio.itch.io/ninja">Ninja</a>
+                    <br></br>
+                    <img src="./assets/Pics/Pic (18).jpg">
+                </div>
+                <div class="Item">
+                    <a target="_blank" href="https://esi-gamestudio.itch.io/wormy">Wormy</a>
+                    <br></br>
+                    <img src="./assets/Pics/Pic (19).jpg">
+                </div>
+                <div class="Item">
+                    <a target="_blank" href="https://esi-gamestudio.itch.io/workers">Post Workers</a>
+                    <br></br>
+                    <img src="./assets/Pics/Pic (20).jpg">
+                </div>
+                <div class="Item">
+                    <a target="_blank" href="https://esi-gamestudio.itch.io/zoodshoot">Zood Shoot</a>
+                    <br></br>
+                    <img src="./assets/Pics/Pic (21).jpg">
+                </div>
+            </div>
+
+
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>Novonordisk Demo Application</h1>
+            <br>
+            <a>
+                Novo Company show application made by Unity for Android.
+                I made this application for show some sections of the Novo company to users.
+                The application have AR and VR ability to have a better experience.
+                3D models made by my friend.
+            </a>
+            <br>
+            <iframe src="https://www.youtube.com/embed/4BbqMhd3Pkc">
+            </iframe>
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>AR Cat</h1>
+            <br>
+            <a>
+                A small pet simulator based AR. You have a cat and you have to take care of it. I made this mini game
+                for people who
+                have cat phobia. The game engine used is Unity.
+            </a>
+            <br></br>
+            <a target="_blank" href="https://esi-gamestudio.itch.io/catgame-ar">Download Page</a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=YUoSntU-J4w">
+            </iframe>
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>Abidi's Drug Store Application</h1>
+            <br>
+            <a>
+                This application is used for drug stores and pharmacies. Some drugs do not need the doctor's permission.
+                So you can buy
+                them easily and choose the useful ones with this application. Users just have to choose the correct
+                options about
+                his/her illness state and after that, the application offers him which drugs should buy! Made by Unity
+                and Blender.
+            </a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=DLyWf6fpPmE">
+            </iframe>
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>Face Fatter</h1>
+            <br>
+            <a>
+                I made this application in 2018 for Novonordisk event. User take a portrait picture and the application
+                change the
+                picture to a fat face. I made it with Unity and used OpenCV to find the face. After the face is found ,
+                I make a mesh
+                and put the texture of the face on it and deform it after that.
+            </a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=RMWbnOfERFI">
+            </iframe>
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>Kinnect Flappy Bird clone</h1>
+            <br>
+            <a>
+                Just a simple infinit 2D arcade game that is played with kinectV2. I made this with Unity and the
+                KinnectV2 SDK. The game
+                looks like a flappy bird!
+            </a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=M0gHCejCLQM">
+            </iframe>
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>Kinnect 3D Runner Game</h1>
+            <br>
+            <a>
+                Just another simple infinite 3D runner game that is played with kinectV2. I made this with Unity and
+                pre-made cubic models
+                and the KinnectV2 SDK.
+            </a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=dkjSZroSNpg">
+            </iframe>
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>Product Show Room Demo</h1>
+            <br>
+            <a>
+                Product show room for a company that made kitchen steel products. User can choose the right one, read
+                exact info about
+                the product and put the product on the modeled kitchen to figure out which one is better to buy. Made by
+                Unity 2017 and
+                3D studio max.
+            </a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=eeYWnvIqQCw">
+            </iframe>
+        </li>
+        <!------------------------------------------>
+        <li>
+            <h1>Chemistry Lab Demo</h1>
+            <br>
+            <a>
+                A virtual chemistry laboratory prototype. You can take a container and mix the contents of them to make
+                a new content. I
+                just want to practice making materials and particles.
+            </a>
+            <br>
+            <iframe src="https://www.youtube.com/watch?v=HdMTCKfwEFs">
+            </iframe>
+        </li>
+
+    </div>
 
 </body>

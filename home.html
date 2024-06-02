@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <style>
+        @font-face {
+            font-family: 'arcade';
+            src: url('./assets/Text.TTF');
+        }
 
-@font-face {
-    font-family: 'arcade';
-    src: url('./assets/Text.TTF');
-}
-        
         body {
-            color: white; 
-            word-wrap: break-word; 
+            color: white;
+            word-wrap: break-word;
             font-family: 'arcade';
             line-height: 170%;
             padding: 3%;
@@ -19,27 +19,101 @@
             line-height: 250%;
         }
 
+        .Album {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 25%;
+            max-width: 50%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
     </style>
 
 </head>
 
 <body>
-    
+
     <p>
         <span style="font-size: 200%">Hello there...</span>
+        <img style="width: 6vw;image-rendering: pixelated;" src="./assets/ESI_Motori.gif">
         <br></br>
-        and welcome to my page. I'm ESI ... a man who live for video game. Video game is my life and I like everything related to that such as programming, level design, making animation, digital painting, making 3D models, music composing and... even voice acting or be a motion capture actor. But my primary skill is gameplay programming. I can make a cool player characters or NPCs or making great mechanics to make funny gameplay. I enjoy working with video game or technological teams and ready for excitment challengs.!!
+        and welcome to my page. I'm ESI ... a man who live for video game. Video game is my life and I like everything
+        related
+        to that such as programming, level design, making animation, digital painting, making 3D models, music composing
+        and...
+        even voice acting or be a motion capture actor. But my primary skill is gameplay programming. I can make a cool
+        player
+        characters or NPCs or making great mechanics to make funny gameplay. I enjoy working with video game or
+        technological
+        teams and ready for excitment challengs.!!
         <br></br>
-You can get more information about me at other pages and you can download my resume from a link below. I hope you enjoyed and I'm so happy to have a chat with you...
+        You can get more information about me at other pages or you can download my resume from a link below. I hope you
+        enjoyed
+        and I'm so happy to have a chat with you...
     </p>
 
     <br>
-    <br>
-    <a href="ESI_CV.pdf" style="cursor: pointer;color: white;">My Resume</a>
-    <hr style="height: 5px; background-color: white;">
-    <br>
-    <br>
+    <img style="width: 6vw;image-rendering: pixelated;vertical-align: middle;" src="./assets/CV_ICO.png">
+    <a target="_blank" href="ESI_CV.pdf" style="cursor: pointer;color: white;">My Resume</a>
+    <hr style="height: 5px; background-color: white; border-style: hidden;">
+    <p style="text-align: center;font-size: 200%;">Album</p>
+
+    <div class="Album">
+        <div class="column">
+            <img src="./assets/Pics/Pic (1).jpg">
+            <img src="./assets/Pics/Pic (2).jpg">
+            <img src="./assets/Pics/Pic (3).jpg">
+            <img src="./assets/Pics/Pic (4).jpg">
+            <img src="./assets/Pics/Pic (5).jpg">
+            <img src="./assets/Pics/Pic (11).jpg">
+            <img src="./assets/Pics/Pic (18).jpg">
+        </div>
+        <div class="column">
+            <img src="./assets/Pics/Pic (0).jpg">
+            <img src="./assets/Pics/Pic (6).jpg">
+            <img src="./assets/Pics/Pic (7).jpg">
+            <img src="./assets/Pics/Pic (8).jpg">
+            <img src="./assets/Pics/Pic (9).jpg">
+            <img src="./assets/Pics/Pic (10).jpg">
+            <img src="./assets/Pics/Pic (19).jpg">
+            <img src="./assets/Pics/Pic (20).jpg">
+        </div>
+        <div class="column">
+            <img src="./assets/Pics/Pic (12).jpg">
+            <img src="./assets/Pics/Pic (13).jpg">
+            <img src="./assets/Pics/Pic (14).jpg">
+            <img src="./assets/Pics/Pic (15).jpg">
+            <img src="./assets/Pics/Pic (16).jpg">
+            <img src="./assets/Pics/Pic (17).jpg">
+            <img src="./assets/Pics/Pic (21).jpg">
+        </div>
+
+    </div>
 
 
 </body>
