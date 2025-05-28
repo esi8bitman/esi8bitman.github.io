@@ -1,2 +1,4 @@
 # esi8bitman.github.io
-ESI's page
+My portfolio page
+
+It made with pure HTML and CSS
